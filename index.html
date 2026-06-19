@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BIKER Performance | Motos Eléctricas de Alto Rendimiento</title>
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP HEADER PROMOTIONS BAR -->
+    <div class="top-bar">
+        <div class="top-bar-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Envío gratis en pedidos superiores a $300</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Garantía de 2 años en todos los modelos</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Devoluciones fáciles en 30 días</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo-area">
+                <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">E-BIKER</span>
+                    <span class="brand-sub">PERFORMANCE</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link">INICIO</a>
+                <a href="#motos-section" class="nav-link active">MOTOS</a>
+                <a href="#" class="nav-link">ACCESORIOS</a>
+                <a href="#" class="nav-link">BATERÍAS</a>
+                <a href="#" class="nav-link">REPUESTOS</a>
+                <a href="#" class="nav-link">SOPORTE</a>
+            </nav>
+
+            <!-- Navigation Actions (Search, Account, Cart) -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar motos, accesorios...">
+                    <button class="search-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="action-btn account-btn" aria-label="Mi Cuenta">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Cuenta</span>
+                </button>
+                <button class="action-btn cart-toggle-btn" id="cartToggleBtn" aria-label="Ver Carrito">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <span>Carrito</span>
+                </button>
+                <!-- Hamburger menu for mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero-banner">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    POTENCIA ELÉCTRICA
+                    <span class="highlight">SIN LÍMITES</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Motos eléctricas diseñadas para la aventura, la velocidad y el futuro.
+                </p>
+
+                <!-- Key Metrics -->
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">100% Eléctricas</span>
+                            <span class="metric-desc">Cero emisiones</span>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Autonomía Extrema</span>
+                            <span class="metric-desc">Hasta 120 km</span>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-title">Carga Rápida</span>
+                            <span class="metric-desc">80% en 2 horas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <a href="#motos-section" class="btn btn-primary hero-btn">
+                    VER COLECCIÓN <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Spacer for background alignment on desktop -->
+            <div class="hero-spacer"></div>
+        </div>
+    </section>
+
+    <!-- OPTIONS TAPE (BENEFITS STRIP) -->
+    <section class="options-tape">
+        <div class="options-container">
+            <div class="option-card">
+                <div class="option-icon-box">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                </div>
+                <div class="option-info">
+                    <h3 class="option-title">Envío gratis</h3>
+                    <p class="option-desc">En pedidos +$300</p>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-icon-box">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <div class="option-info">
+                    <h3 class="option-title">Garantía 2 años</h3>
+                    <p class="option-desc">En todos los modelos</p>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-icon-box">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="option-info">
+                    <h3 class="option-title">Pago seguro</h3>
+                    <p class="option-desc">Con Stripe</p>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-icon-box">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="option-info">
+                    <h3 class="option-title">Soporte 24/7</h3>
+                    <p class="option-desc">Estamos para ayudarte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG & FILTERS SECTION -->
+    <main class="catalog-section" id="motos-section">
+        <div class="catalog-container">
+            
+            <!-- Section Header -->
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">TODAS LAS MOTOS ELÉCTRICAS</h2>
+                    <p class="product-count" id="productCount">24 modelos disponibles</p>
+                </div>
+                <div class="catalog-controls">
+                    <div class="sort-wrapper">
+                        <label for="sortBy">Ordenar por:</label>
+                        <select id="sortBy" class="sort-select">
+                            <option value="popular">Más populares</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="autonomy">Mayor autonomía</option>
+                        </select>
+                    </div>
+                    <div class="layout-toggle">
+                        <button class="layout-btn active" id="gridLayoutBtn" aria-label="Vista cuadrícula">
+                            <i class="fa-solid fa-grip"></i>
+                        </button>
+                        <button class="layout-btn" id="listLayoutBtn" aria-label="Vista lista">
+                            <i class="fa-solid fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area (Sidebar Filters + Product Grid) -->
+            <div class="catalog-content-layout">
+                
+                <!-- SIDEBAR FILTERS -->
+                <aside class="sidebar-filters" id="sidebarFilters">
+                    <div class="filters-header">
+                        <h3>FILTROS</h3>
+                        <button class="clear-filters-btn" id="clearFiltersBtn">Limpiar todo</button>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-group">
+                        <button class="filter-group-toggle" aria-expanded="true">
+                            <span>Precio</span>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                        <div class="filter-group-content">
+                            <div class="range-labels">
+                                <span id="priceMinLabel">$800</span>
+                                <span id="priceMaxLabel">$6,000</span>
+                            </div>
+                            <input type="range" id="priceRange" min="800" max="6000" step="100" value="6000" class="slider-input">
+                            <div class="range-value-display">
+                                Máx: <span id="priceCurrentValue" class="orange-text">$6,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Autonomy Filter -->
+                    <div class="filter-group">
+                        <button class="filter-group-toggle" aria-expanded="true">
+                            <span>Autonomía</span>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                        <div class="filter-group-content">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="autonomy" value="0-60">
+                                <span class="checkmark"></span>
+                                <span class="label-text">0 - 60 km</span>
+                                <span class="badge" id="count-auto-1">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="autonomy" value="60-120">
+                                <span class="checkmark"></span>
+                                <span class="label-text">60 - 120 km</span>
+                                <span class="badge" id="count-auto-2">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="autonomy" value="120-200">
+                                <span class="checkmark"></span>
+                                <span class="label-text">120 - 200 km</span>
+                                <span class="badge" id="count-auto-3">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="autonomy" value="200+">
+                                <span class="checkmark"></span>
+                                <span class="label-text">200+ km</span>
+                                <span class="badge" id="count-auto-4">0</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Max Speed Filter -->
+                    <div class="filter-group">
+                        <button class="filter-group-toggle" aria-expanded="true">
+                            <span>Velocidad máxima</span>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                        <div class="filter-group-content">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="speed" value="0-45">
+                                <span class="checkmark"></span>
+                                <span class="label-text">0 - 45 km/h</span>
+                                <span class="badge" id="count-speed-1">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="speed" value="45-80">
+                                <span class="checkmark"></span>
+                                <span class="label-text">45 - 80 km/h</span>
+                                <span class="badge" id="count-speed-2">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="speed" value="80+">
+                                <span class="checkmark"></span>
+                                <span class="label-text">80+ km/h</span>
+                                <span class="badge" id="count-speed-3">0</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Type Filter -->
+                    <div class="filter-group">
+                        <button class="filter-group-toggle" aria-expanded="true">
+                            <span>Tipo</span>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                        <div class="filter-group-content">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="type" value="Enduro Eléctrica">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Enduro Eléctrica</span>
+                                <span class="badge" id="count-type-1">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="type" value="Cross / Off Road">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Cross / Off Road</span>
+                                <span class="badge" id="count-type-2">0</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="type" value="Trail / Aventura">
+                                <span class="checkmark"></span>
+                                <span class="label-text">Trail / Aventura</span>
+                                <span class="badge" id="count-type-3">0</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary apply-filters-btn" id="applyFiltersBtn">APLICAR FILTROS</button>
+                </aside>
+
+                <!-- PRODUCT GRID -->
+                <div class="product-grid" id="productGrid">
+                    <!-- Products will be dynamically generated by JS -->
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LOWER INFORMATION / BENEFIT ICONS & NEWSLETTER -->
+    <section class="lower-info-section">
+        <div class="lower-container">
+            <div class="tech-benefits">
+                <div class="tech-benefit-item">
+                    <div class="benefit-icon-circle">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h4 class="benefit-heading">Tecnología de vanguardia</h4>
+                        <p class="benefit-sub">Innovación en cada detalle</p>
+                    </div>
+                </div>
+                <div class="tech-benefit-item">
+                    <div class="benefit-icon-circle">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h4 class="benefit-heading">Diseño ligero y resistente</h4>
+                        <p class="benefit-sub">Máximo rendimiento</p>
+                    </div>
+                </div>
+                <div class="tech-benefit-item">
+                    <div class="benefit-icon-circle">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h4 class="benefit-heading">Baterías de última generación</h4>
+                        <p class="benefit-sub">Más autonomía y vida útil</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-box">
+                <h4 class="newsletter-title">Recibe ofertas exclusivas</h4>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Tu correo electrónico" required id="newsletterEmail">
+                    <button type="submit" class="newsletter-submit-btn" aria-label="Suscribirse">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top-container">
+            
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-area">
+                    <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name">E-BIKER</span>
+                        <span class="brand-sub">PERFORMANCE</span>
+                    </div>
+                </a>
+                <p class="brand-desc">
+                    Motos eléctricas de alto rendimiento diseñadas para romper límites. Potencia. Libertad. Futuro.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Menus -->
+            <div class="footer-col">
+                <h4 class="footer-title">TIENDA</h4>
+                <ul class="footer-links">
+                    <li><a href="#motos-section">Todas las motos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Baterías</a></li>
+                    <li><a href="#">Repuestos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">SOPORTE</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Envíos y entregas</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Garantía</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EMPRESA</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+
+            <!-- Stripe Payment Methods -->
+            <div class="footer-col payments-col">
+                <h4 class="footer-title">PAGOS SEGUROS CON STRIPE</h4>
+                <div class="payment-cards-grid">
+                    <div class="payment-card-badge visa-badge"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+                    <div class="payment-card-badge master-badge"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
+                    <div class="payment-card-badge amex-badge"><i class="fa-brands fa-cc-amex"></i><span>Amex</span></div>
+                    <div class="payment-card-badge discover-badge"><i class="fa-brands fa-cc-discover"></i><span>Discover</span></div>
+                    <div class="payment-card-badge apple-pay-badge"><i class="fa-brands fa-apple-pay"></i></div>
+                    <div class="payment-card-badge google-pay-badge"><i class="fa-brands fa-google-pay"></i></div>
+                </div>
+                <p class="payments-desc">Aceptamos todas las tarjetas de crédito y débito de forma segura.</p>
+                <div class="stripe-sec-logo">
+                    <span class="stripe-word">stripe</span>
+                    <div class="security-badge">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Verificado Seguro</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">&copy; 2026 E-BIKER Performance. Todos los derechos reservados.</p>
+                <p class="creator-credits">Hecho con <span class="heart">&hearts;</span> para los amantes de la aventura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SIDE DRAWER -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+        <div class="cart-drawer-content">
+            <div class="cart-drawer-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-drawer-btn" id="closeCartBtn" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Empty Cart Message -->
+            <div class="cart-empty-message" id="cartEmptyMessage">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="#motos-section" class="btn btn-primary" id="startShoppingBtn">Ver Motos</a>
+            </div>
+
+            <!-- Cart Items List -->
+            <div class="cart-items-container" id="cartItemsContainer">
+                <!-- Cart items will be loaded dynamically by JS -->
+            </div>
+
+            <!-- Cart Summary & Checkout -->
+            <div class="cart-summary" id="cartSummary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span class="summary-price" id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío:</span>
+                    <span class="summary-price green-text" id="cartShipping">Gratis</span>
+                </div>
+                <hr class="summary-divider">
+                <div class="summary-row total-row">
+                    <span>Total:</span>
+                    <span class="summary-price total-price" id="cartTotal">$0.00</span>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="checkoutBtn">PROCEDER AL PAGO CON STRIPE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div class="modal" id="productModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="close-modal-btn" id="closeModalBtn" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body-layout" id="modalBodyLayout">
+                <!-- Loaded dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toastMessage">¡Producto añadido al carrito!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>

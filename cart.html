@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras | E-BIKER Performance</title>
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP HEADER PROMOTIONS BAR -->
+    <div class="top-bar">
+        <div class="top-bar-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Envío gratis en pedidos superiores a $300</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Garantía de 2 años en todos los modelos</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Devoluciones fáciles en 30 días</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">E-BIKER</span>
+                    <span class="brand-sub">PERFORMANCE</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="index.html#motos-section" class="nav-link">MOTOS</a>
+                <a href="#" class="nav-link">ACCESORIOS</a>
+                <a href="#" class="nav-link">BATERÍAS</a>
+                <a href="#" class="nav-link">REPUESTOS</a>
+                <a href="#" class="nav-link">SOPORTE</a>
+            </nav>
+
+            <!-- Navigation Actions (Search, Account, Cart) -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar motos, accesorios...">
+                    <button class="search-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="action-btn account-btn" aria-label="Mi Cuenta">
+                     <i class="fa-regular fa-user"></i>
+                     <span>Cuenta</span>
+                </button>
+                <button class="action-btn cart-toggle-btn active" id="cartToggleBtn" aria-label="Ver Carrito">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <span>Carrito</span>
+                </button>
+                <!-- Hamburger menu for mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumb-container">
+        <div class="wrapper-wide">
+            <nav class="breadcrumbs">
+                <a href="index.html">Inicio</a>
+                <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="current">Carrito de compras</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CART CONTENT -->
+    <main class="cart-page-wrapper">
+        <div class="wrapper-wide">
+            <h1 class="cart-page-title">Carrito de compras</h1>
+            <p class="cart-page-subtitle">Revisa tus productos antes de continuar con el pago.</p>
+
+            <div class="cart-grid">
+                <!-- Left column: Items List -->
+                <div class="cart-left-col">
+                    
+                    <!-- Table Header (Desktop only) -->
+                    <div class="cart-table-header">
+                        <div class="col-product">PRODUCTO</div>
+                        <div class="col-price">PRECIO</div>
+                        <div class="col-qty">CANTIDAD</div>
+                        <div class="col-total">TOTAL</div>
+                        <div class="col-actions"></div>
+                    </div>
+
+                    <!-- Items container -->
+                    <div class="cart-page-items-list" id="cartPageItemsList">
+                        <!-- Loaded dynamically via JS -->
+                    </div>
+
+                    <!-- Empty state -->
+                    <div class="cart-page-empty-state" id="cartPageEmptyState" style="display: none;">
+                        <i class="fa-solid fa-cart-flatbed-suitcase empty-icon"></i>
+                        <h2>Tu carrito está vacío</h2>
+                        <p>No tienes ningún producto en tu carrito de compras actualmente.</p>
+                        <a href="index.html#motos-section" class="btn btn-primary">Ver motocicletas</a>
+                    </div>
+
+                    <!-- Left Column Footer Buttons -->
+                    <div class="cart-left-footer" id="cartLeftFooter">
+                        <a href="index.html#motos-section" class="btn btn-outline btn-back">
+                            <i class="fa-solid fa-arrow-left"></i> Seguir comprando
+                        </a>
+                        <button class="btn btn-outline btn-clear" id="clearCartBtn">
+                            <i class="fa-solid fa-trash-can"></i> Vaciar carrito
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Right column: Sidebar -->
+                <div class="cart-right-col" id="cartRightCol">
+                    
+                    <!-- Summary Card -->
+                    <div class="summary-card">
+                        <h3 class="summary-card-title">Resumen del pedido</h3>
+                        
+                        <div class="summary-row">
+                            <span id="subtotalLabel">Subtotal (0 artículos)</span>
+                            <span class="summary-val" id="pageSubtotal">$0.00</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Envío</span>
+                            <span class="summary-val orange-text" id="pageShipping">Gratis</span>
+                        </div>
+
+                        <!-- Shipping Calculator Collapsible -->
+                        <div class="shipping-calculator">
+                            <button class="calc-toggle-btn" id="calcToggleBtn">
+                                <span>Calcula el envío</span>
+                                <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+                            </button>
+                            <div class="calc-content" id="calcContent">
+                                <div class="calc-form-group">
+                                    <input type="text" placeholder="Ingresa tu código postal" class="calc-input" id="zipCodeInput">
+                                    <button class="btn btn-outline btn-calc" id="zipCalcBtn">Calcular</button>
+                                </div>
+                                <div class="calc-result" id="calcResult"></div>
+                            </div>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Impuestos</span>
+                            <span class="summary-val">$0.00</span>
+                        </div>
+
+                        <hr class="summary-divider">
+
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <div class="total-price-box">
+                                <span class="currency-code">USD</span>
+                                <span class="summary-val total-val" id="pageTotal">$0.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Proceed to Payment Button -->
+                        <button class="btn btn-primary pay-btn" id="checkoutBtnPage">
+                            <i class="fa-solid fa-lock"></i> Proceder al pago
+                        </button>
+
+                        <!-- Payments Secure Badges -->
+                        <div class="secure-stripe-notice">
+                            <div class="stripe-header">
+                                <i class="fa-solid fa-lock security-lock-icon"></i>
+                                <span>Pagos seguros con Stripe</span>
+                            </div>
+                            <div class="stripe-badge-grid">
+                                <div class="badge-item"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+                                <div class="badge-item"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
+                                <div class="badge-item"><i class="fa-brands fa-cc-amex"></i><span>Amex</span></div>
+                                <div class="badge-item"><i class="fa-brands fa-cc-discover"></i><span>Discover</span></div>
+                                <div class="badge-item"><i class="fa-brands fa-apple-pay"></i></div>
+                                <div class="badge-item"><i class="fa-brands fa-google-pay"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discount code promo card -->
+                    <div class="promo-card">
+                        <div class="promo-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="promo-text-box">
+                            <h4 class="promo-title">¿Tienes un código de descuento?</h4>
+                            <p class="promo-desc">Ingresa tu código al momento del pago.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- "También te puede interesar" Section -->
+            <section class="suggestions-section">
+                <h2 class="suggestions-title">También te puede interesar</h2>
+                
+                <div class="suggestions-grid" id="suggestionsGrid">
+                    <!-- Loaded dynamically via JS -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- TECHNOLOGY BENEFITS BAR -->
+    <section class="tech-benefits-bar">
+        <div class="wrapper-wide benefits-grid">
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
+                <div class="benefit-info">
+                    <h4>Tecnología de vanguardia</h4>
+                    <p>Innovación en cada detalle</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div class="benefit-info">
+                    <h4>Diseño ligero y resistente</h4>
+                    <p>Máximo rendimiento</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-battery-full"></i></div>
+                <div class="benefit-info">
+                    <h4>Baterías de última generación</h4>
+                    <p>Más autonomía y vida útil</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
+                <div class="benefit-info">
+                    <h4>Soporte 24/7</h4>
+                    <p>Estamos para ayudarte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top-container">
+            
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo-area">
+                    <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name">E-BIKER</span>
+                        <span class="brand-sub">PERFORMANCE</span>
+                    </div>
+                </a>
+                <p class="brand-desc">
+                    Motos eléctricas de alto rendimiento diseñadas para romper límites. Potencia. Libertad. Futuro.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Menus -->
+            <div class="footer-col">
+                <h4 class="footer-title">TIENDA</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#motos-section">Todas las motos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Baterías</a></li>
+                    <li><a href="#">Repuestos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">SOPORTE</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Envíos y entregas</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Garantía</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EMPRESA</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+
+            <!-- Stripe Payment Methods -->
+            <div class="footer-col payments-col">
+                <h4 class="footer-title">PAGOS SEGUROS CON STRIPE</h4>
+                <div class="payment-cards-grid">
+                    <div class="payment-card-badge visa-badge"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+                    <div class="payment-card-badge master-badge"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
+                    <div class="payment-card-badge amex-badge"><i class="fa-brands fa-cc-amex"></i><span>Amex</span></div>
+                    <div class="payment-card-badge discover-badge"><i class="fa-brands fa-cc-discover"></i><span>Discover</span></div>
+                    <div class="payment-card-badge apple-pay-badge"><i class="fa-brands fa-apple-pay"></i></div>
+                    <div class="payment-card-badge google-pay-badge"><i class="fa-brands fa-google-pay"></i></div>
+                </div>
+                <p class="payments-desc">Aceptamos todas las tarjetas de crédito y débito de forma segura.</p>
+                <div class="stripe-sec-logo">
+                    <span class="stripe-word">stripe</span>
+                    <div class="security-badge">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Verificado Seguro</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">&copy; 2026 E-BIKER Performance. Todos los derechos reservados.</p>
+                <p class="creator-credits">Hecho con <span class="heart">&hearts;</span> para los amantes de la aventura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toastMessage">¡Producto añadido al carrito!</span>
+    </div>
+
+    <!-- Page Logic -->
+    <script src="cart.js"></script>
+</body>
+</html>
