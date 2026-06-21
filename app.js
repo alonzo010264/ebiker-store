@@ -520,6 +520,17 @@ const toastMessage = document.getElementById('toastMessage');
 // --- INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
     loadCartFromStorage();
+    
+    // Parse URL parameters for cross-page searches (e.g. from cart page)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlSearch = urlParams.get('search');
+    if (urlSearch) {
+        searchQuery = urlSearch;
+        searchInput.value = urlSearch;
+        const mobSearch = document.getElementById('mobileSearchInput');
+        if (mobSearch) mobSearch.value = urlSearch;
+    }
+    
     renderAll();
     setupEventListeners();
     updateFilterCounts();
@@ -711,8 +722,19 @@ function setupEventListeners() {
     // Search bar
     searchInput.addEventListener('input', (e) => {
         searchQuery = e.target.value;
+        const mobSearch = document.getElementById('mobileSearchInput');
+        if (mobSearch) mobSearch.value = searchQuery;
         renderAll();
     });
+
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    if (mobileSearchInput) {
+        mobileSearchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            searchInput.value = searchQuery;
+            renderAll();
+        });
+    }
 
     // Price range slider
     priceRangeInput.addEventListener('input', (e) => {

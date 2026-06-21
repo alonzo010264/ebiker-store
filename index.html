@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,12 +45,40 @@
 
             <!-- Navigation Links -->
             <nav class="nav-menu" id="navMenu">
-                <a href="#" class="nav-link">INICIO</a>
-                <a href="#motos-section" class="nav-link active">MOTOS</a>
-                <a href="#" class="nav-link">ACCESORIOS</a>
-                <a href="#" class="nav-link">BATERÍAS</a>
-                <a href="#" class="nav-link">REPUESTOS</a>
-                <a href="#" class="nav-link">SOPORTE</a>
+                <!-- Mobile Search Box inside drawer -->
+                <div class="mobile-nav-search">
+                    <input type="text" id="mobileSearchInput" placeholder="Buscar motos, accesorios...">
+                    <button id="mobileSearchBtn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <!-- Nav Links Wrapper -->
+                <div class="nav-links-wrapper">
+                    <a href="#" class="nav-link" data-i18n="navInicio">HOME</a>
+                    <a href="#motos-section" class="nav-link active" data-i18n="navMotos">MOTORCYCLES</a>
+                    <a href="#" class="nav-link" data-i18n="navAccesorios">ACCESSORIES</a>
+                    <a href="#" class="nav-link" data-i18n="navBaterias">BATTERIES</a>
+                    <a href="#" class="nav-link" data-i18n="navRepuestos">SPARE PARTS</a>
+                    <a href="#" class="nav-link" data-i18n="navSoporte">SUPPORT</a>
+                </div>
+
+                <!-- Mobile Language Selector inside drawer -->
+                <div class="mobile-lang-selector">
+                    <span class="mobile-lang-title">Idioma / Language</span>
+                    <div class="mobile-lang-grid">
+                        <button class="mobile-lang-btn active" data-lang="en">
+                            <span class="lang-flag-text">EN</span> English
+                        </button>
+                        <button class="mobile-lang-btn" data-lang="es">
+                            <span class="lang-flag-text">ES</span> Español
+                        </button>
+                        <button class="mobile-lang-btn" data-lang="fr">
+                            <span class="lang-flag-text">FR</span> Français
+                        </button>
+                        <button class="mobile-lang-btn" data-lang="de">
+                            <span class="lang-flag-text">DE</span> Deutsch
+                        </button>
+                    </div>
+                </div>
             </nav>
 
             <!-- Navigation Actions (Search, Account, Cart) -->
@@ -61,15 +89,43 @@
                 </div>
                 <button class="action-btn account-btn" aria-label="Mi Cuenta">
                     <i class="fa-regular fa-user"></i>
-                    <span>Cuenta</span>
+                    <span data-i18n="accountText">Cuenta</span>
                 </button>
-                <button class="action-btn cart-toggle-btn" id="cartToggleBtn" aria-label="Ver Carrito">
+                <button class="action-btn cart-toggle-btn" id="cartToggleBtn" aria-label="View Cart">
                     <div class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart-badge" id="cartBadge">0</span>
                     </div>
-                    <span>Carrito</span>
+                    <span data-i18n="cart">Cart</span>
                 </button>
+                
+                <!-- Language Selector Dropdown (Desktop) -->
+                <div class="lang-dropdown-container">
+                    <button class="lang-dropdown-trigger" id="langDropdownTrigger" aria-label="Select Language">
+                        <span class="lang-flag-text">EN</span>
+                        <span class="lang-name-text">English</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <button class="lang-dropdown-item active" data-lang="en">
+                            <span class="lang-flag-text">EN</span>
+                            <span>English</span>
+                        </button>
+                        <button class="lang-dropdown-item" data-lang="es">
+                            <span class="lang-flag-text">ES</span>
+                            <span>Español</span>
+                        </button>
+                        <button class="lang-dropdown-item" data-lang="fr">
+                            <span class="lang-flag-text">FR</span>
+                            <span>Français</span>
+                        </button>
+                        <button class="lang-dropdown-item" data-lang="de">
+                            <span class="lang-flag-text">DE</span>
+                            <span>Deutsch</span>
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Hamburger menu for mobile -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
                     <i class="fa-solid fa-bars"></i>
@@ -82,12 +138,12 @@
     <section class="hero-banner">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    POTENCIA ELÉCTRICA
-                    <span class="highlight">SIN LÍMITES</span>
+                <h1 class="hero-title" data-i18n="heroTitle">
+                    ELECTRIC POWER
+                    <span class="highlight" data-i18n="withoutLimits">WITHOUT LIMITS</span>
                 </h1>
-                <p class="hero-subtitle">
-                    Motos eléctricas diseñadas para la aventura, la velocidad y el futuro.
+                <p class="hero-subtitle" data-i18n="heroSubtitle">
+                    Electric motorcycles designed for adventure, speed and the future.
                 </p>
 
                 <!-- Key Metrics -->
@@ -97,8 +153,8 @@
                             <i class="fa-solid fa-bolt"></i>
                         </div>
                         <div class="metric-details">
-                            <span class="metric-title">100% Eléctricas</span>
-                            <span class="metric-desc">Cero emisiones</span>
+                            <span class="metric-title" data-i18n="metricElectric">100% Electric</span>
+                            <span class="metric-desc" data-i18n="metricZero">Cero emisiones</span>
                         </div>
                     </div>
                     <div class="metric-item">
@@ -530,6 +586,7 @@
     </div>
 
     <!-- Custom JS -->
+    <script src="i18n.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

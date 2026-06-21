@@ -213,6 +213,12 @@ const suggestionsGrid = document.getElementById('suggestionsGrid');
 const toast = document.getElementById('toast');
 const toastMessage = document.getElementById('toastMessage');
 
+// Header elements
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navMenu = document.getElementById('navMenu');
+const searchInput = document.getElementById('searchInput');
+const mobileSearchInput = document.getElementById('mobileSearchInput');
+
 // --- INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
     loadCartFromStorage();
@@ -525,6 +531,59 @@ function setupEventListeners() {
             }, 1200);
         }, 2000);
     });
+
+    // Mobile nav toggle hamburger click
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-xmark');
+        });
+    }
+
+    // Close mobile nav when link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu && mobileMenuBtn) {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-xmark');
+            }
+        });
+    });
+
+    // Cross-page search handler redirecting to catalog
+    const performSearch = (query) => {
+        window.location.href = `index.html?search=${encodeURIComponent(query.trim())}`;
+    };
+
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch(e.target.value);
+            }
+        });
+        const searchBtn = document.querySelector('.search-btn');
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                performSearch(searchInput.value);
+            });
+        }
+    }
+
+    if (mobileSearchInput) {
+        mobileSearchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch(e.target.value);
+            }
+        });
+        const mobSearchBtn = document.getElementById('mobileSearchBtn');
+        if (mobSearchBtn) {
+            mobSearchBtn.addEventListener('click', () => {
+                performSearch(mobileSearchInput.value);
+            });
+        }
+    }
 
     // Logo click in header redirects correctly
     document.querySelector('.logo-area').addEventListener('click', (e) => {
