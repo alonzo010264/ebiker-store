@@ -43,6 +43,12 @@
                 </div>
             </a>
 
+            <!-- Search Box (Desktop) -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon-left"></i>
+                <input type="text" id="searchInput" placeholder="Search motorcycles, accessories...">
+            </div>
+
             <!-- Navigation Links -->
             <nav class="nav-menu" id="navMenu">
                 <!-- Mobile Search Box inside drawer -->
@@ -53,7 +59,7 @@
 
                 <!-- Nav Links Wrapper -->
                 <div class="nav-links-wrapper">
-                    <a href="index.html" class="nav-link" data-i18n="navInicio">HOME</a>
+                    <a href="index.html" class="nav-link" data-i18n="navHome">HOME</a>
                     <a href="index.html#motos-section" class="nav-link" data-i18n="navMotos">MOTORCYCLES</a>
                     <a href="#" class="nav-link" data-i18n="navAccesorios">ACCESSORIES</a>
                     <a href="#" class="nav-link" data-i18n="navBaterias">BATTERIES</a>
@@ -64,12 +70,8 @@
 
             </nav>
 
-            <!-- Navigation Actions (Search, Account, Cart) -->
+            <!-- Navigation Actions (Account, Cart) -->
             <div class="header-actions">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search motorcycles, accessories...">
-                    <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
                 <button class="action-btn account-btn" aria-label="My Account">
                      <i class="fa-regular fa-user"></i>
                      <span data-i18n="accountText">Account</span>
@@ -96,7 +98,7 @@
     <div class="breadcrumb-container">
         <div class="wrapper-wide">
             <nav class="breadcrumbs">
-                <a href="index.html" data-i18n="breadcrumbInicio">Home</a>
+                <a href="index.html" data-i18n="breadcrumbHome">Home</a>
                 <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                 <span class="current" data-i18n="breadcrumbCart">Shopping Cart</span>
             </nav>
@@ -107,7 +109,7 @@
     <main class="cart-page-wrapper">
         <div class="wrapper-wide">
             <h1 class="cart-page-title" data-i18n="cartPageTitle">Shopping Cart</h1>
-            <p class="cart-page-subtitle" data-i18n="cartPageSubtitle">Review your items before proceeding to checkout.</p>
+            <p class="cart-page-subtitle" data-i18n="cartPageSubtitle">Review your products before proceeding to checkout.</p>
 
             <div class="cart-grid">
                 <!-- Left column: Items List -->
