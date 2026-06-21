@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | E-BIKER Performance</title>
+    <meta name="description" content="Get in touch with E-BIKER Performance. We're here to help with questions about our electric motorcycles, orders, and support.">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP HEADER PROMOTIONS BAR -->
+    <div class="top-bar">
+        <div class="top-bar-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Free shipping on orders over $300</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>2-year warranty on all models</span>
+        </div>
+        <div class="top-bar-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Easy 30-day returns</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">E-BIKER</span>
+                    <span class="brand-sub">PERFORMANCE</span>
+                </div>
+            </a>
+
+            <!-- Search Box (Desktop) -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon-left"></i>
+                <input type="text" id="searchInput" placeholder="Search motorcycles, accessories...">
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <!-- Mobile Search Box inside drawer -->
+                <div class="mobile-nav-search">
+                    <input type="text" id="mobileSearchInput" placeholder="Search motorcycles, accessories...">
+                    <button id="mobileSearchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <!-- Nav Links Wrapper -->
+                <div class="nav-links-wrapper">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="index.html#motos-section" class="nav-link">MOTORCYCLES</a>
+                    <a href="#" class="nav-link">ACCESSORIES</a>
+                    <a href="#" class="nav-link">BATTERIES</a>
+                    <a href="#" class="nav-link">SPARE PARTS</a>
+                    <a href="contact.html" class="nav-link active">SUPPORT</a>
+                </div>
+
+            </nav>
+
+            <!-- Navigation Actions (Account, Cart) -->
+            <div class="header-actions">
+                <button class="action-btn account-btn" aria-label="My Account">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </button>
+                <a href="cart.html" class="action-btn cart-toggle-btn" aria-label="View Cart">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <span>Cart</span>
+                </a>
+
+                <!-- Hamburger menu for mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTACT HERO SECTION -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <span class="contact-hero-badge"><i class="fa-solid fa-headset"></i> Get in Touch</span>
+            <h1 class="contact-hero-title">We'd Love to <span class="highlight">Hear From You</span></h1>
+            <p class="contact-hero-subtitle">Have a question about our electric motorcycles? Need technical support? Our team is ready to help you ride into the future.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="contact-info-section">
+        <div class="wrapper-wide">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>1200 Innovation Drive</p>
+                    <p>Austin, TX 78701</p>
+                    <p class="info-highlight">Mon – Sat: 9AM – 7PM</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Sales: +1 (555) 123-4567</p>
+                    <p>Support: +1 (555) 987-6543</p>
+                    <p class="info-highlight">24/7 Emergency Line Available</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General: info@ebiker.com</p>
+                    <p>Support: help@ebiker.com</p>
+                    <p class="info-highlight">We reply within 24 hours</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our specialists</p>
+                    <p>in real time.</p>
+                    <p class="info-highlight">Available Mon – Fri: 8AM – 10PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTACT FORM + MAP SECTION -->
+    <section class="contact-form-section">
+        <div class="wrapper-wide">
+            <div class="contact-layout">
+
+                <!-- LEFT: Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and our team will get back to you as soon as possible.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-phone input-icon"></i>
+                                    <input type="tel" id="contactPhone" name="phone" placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <select id="contactSubject" name="subject" required>
+                                        <option value="" disabled selected>Select a topic...</option>
+                                        <option value="sales">Sales Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="warranty">Warranty Claim</option>
+                                        <option value="shipping">Shipping & Delivery</option>
+                                        <option value="returns">Returns & Refunds</option>
+                                        <option value="partnership">Partnership / Dealer</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="contactOrder">Order Number <span class="optional">(optional)</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-hashtag input-icon"></i>
+                                <input type="text" id="contactOrder" name="order" placeholder="e.g. EB-2026-00123">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="contactMessage">Your Message <span class="required">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-solid fa-message input-icon"></i>
+                                <textarea id="contactMessage" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="contactNewsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span>I'd like to receive news and exclusive offers from E-BIKER</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary contact-submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- RIGHT: Map + Extra Info -->
+                <div class="contact-sidebar">
+                    <!-- Embedded Map -->
+                    <div class="contact-map-container">
+                        <div class="map-placeholder">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>E-BIKER HQ — Austin, TX</span>
+                            <p>1200 Innovation Drive, Austin, TX 78701</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick FAQ -->
+                    <div class="contact-faq">
+                        <h3><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h3>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">
+                                <span>What is the warranty on your motorcycles?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>All E-BIKER motorcycles come with a standard 2-year warranty covering the motor, battery, and frame. Extended warranty plans are available at checkout.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">
+                                <span>How long does shipping take?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Standard shipping takes 5–7 business days within the US. Express shipping (2–3 days) is available for an additional fee. Free shipping on orders over $300.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">
+                                <span>Can I return or exchange my purchase?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We offer a hassle-free 30-day return policy. Items must be in their original condition. Contact our support team to initiate a return.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-toggle">
+                                <span>Do you offer financing options?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we partner with Affirm and Klarna to offer flexible payment plans. You can choose to pay in 3, 6, or 12 monthly installments at checkout.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social-box">
+                        <h3>Follow Us</h3>
+                        <p>Stay updated with the latest from E-BIKER</p>
+                        <div class="contact-social-links">
+                            <a href="#" class="social-link-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-link-btn"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link-btn"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social-link-btn"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" class="social-link-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY BENEFITS BAR -->
+    <section class="tech-benefits-bar">
+        <div class="wrapper-wide benefits-grid">
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
+                <div class="benefit-info">
+                    <h4>Cutting-edge Technology</h4>
+                    <p>Innovation in every detail</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div class="benefit-info">
+                    <h4>Lightweight & Durable Design</h4>
+                    <p>Maximum performance</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-battery-full"></i></div>
+                <div class="benefit-info">
+                    <h4>Next-gen Batteries</h4>
+                    <p>More range and lifespan</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
+                <div class="benefit-info">
+                    <h4>24/7 Support</h4>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top-container">
+            
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo-area">
+                    <img src="assets/logo.png" alt="E-BIKER PERFORMANCE LOGO" class="nav-logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name">E-BIKER</span>
+                        <span class="brand-sub">PERFORMANCE</span>
+                    </div>
+                </a>
+                <p class="brand-desc">
+                    High-performance electric motorcycles designed to break limits. Power. Freedom. Future.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Menus -->
+            <div class="footer-col">
+                <h4 class="footer-title">SHOP</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#motos-section">All motorcycles</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Batteries</a></li>
+                    <li><a href="#">Spare parts</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-title">SUPPORT</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">COMPANY</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Stripe Payment Methods -->
+            <div class="footer-col payments-col">
+                <h4 class="footer-title">SECURE PAYMENTS WITH STRIPE</h4>
+                <div class="payment-cards-grid">
+                    <div class="payment-card-badge visa-badge"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+                    <div class="payment-card-badge master-badge"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
+                    <div class="payment-card-badge amex-badge"><i class="fa-brands fa-cc-amex"></i><span>Amex</span></div>
+                    <div class="payment-card-badge discover-badge"><i class="fa-brands fa-cc-discover"></i><span>Discover</span></div>
+                    <div class="payment-card-badge apple-pay-badge"><i class="fa-brands fa-apple-pay"></i></div>
+                    <div class="payment-card-badge google-pay-badge"><i class="fa-brands fa-google-pay"></i></div>
+                </div>
+                <p class="payments-desc">We accept all credit and debit cards securely.</p>
+                <div class="stripe-sec-logo">
+                    <span class="stripe-word">stripe</span>
+                    <div class="security-badge">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Verified Secure</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">&copy; 2026 E-BIKER Performance. All rights reserved.</p>
+
+                <!-- Footer Language Selector with Flags -->
+                <div class="footer-lang-selector">
+                    <span class="footer-lang-label"><i class="fa-solid fa-globe"></i> Language</span>
+                    <div class="footer-lang-options">
+                        <button class="footer-lang-btn active" data-lang="en" title="English">
+                            <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="es" title="Español">
+                            <img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-icon">
+                            <span>Español</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="fr" title="Français">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon">
+                            <span>Français</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="de" title="Deutsch">
+                            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon">
+                            <span>Deutsch</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="pt" title="Português">
+                            <img src="https://flagcdn.com/w40/br.png" alt="BR" class="flag-icon">
+                            <span>Português</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="it" title="Italiano">
+                            <img src="https://flagcdn.com/w40/it.png" alt="IT" class="flag-icon">
+                            <span>Italiano</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="ja" title="日本語">
+                            <img src="https://flagcdn.com/w40/jp.png" alt="JP" class="flag-icon">
+                            <span>日本語</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="zh" title="中文">
+                            <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="flag-icon">
+                            <span>中文</span>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="creator-credits">Made with <span class="heart">&hearts;</span> for adventure lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toastMessage">Message sent successfully!</span>
+    </div>
+
+    <!-- Page Logic -->
+    <script src="i18n.js"></script>
+    <script>
+        // ===== MOBILE MENU TOGGLE =====
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+
+        // ===== FAQ ACCORDION =====
+        document.querySelectorAll('.faq-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const faqItem = btn.closest('.faq-item');
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+                
+                // Toggle current
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // ===== CONTACT FORM SUBMISSION =====
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form data
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value;
+                
+                if (!name || !email || !subject || !message) {
+                    showToast('Please fill in all required fields.', 'error');
+                    return;
+                }
+                
+                // Simulate sending
+                const submitBtn = contactForm.querySelector('.contact-submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
+                    submitBtn.classList.add('success');
+                    showToast('Your message has been sent successfully! We\'ll get back to you soon.', 'success');
+                    
+                    // Reset form after delay
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('success');
+                    }, 3000);
+                }, 1500);
+            });
+        }
+
+        // ===== TOAST NOTIFICATION =====
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            const toastIcon = toast.querySelector('.toast-icon');
+            
+            toastMessage.textContent = message;
+            
+            if (type === 'error') {
+                toastIcon.className = 'fa-solid fa-circle-exclamation toast-icon';
+                toast.style.borderLeftColor = '#ef4444';
+            } else {
+                toastIcon.className = 'fa-solid fa-circle-check toast-icon';
+                toast.style.borderLeftColor = '';
+            }
+            
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+        }
+    </script>
+</body>
+</html>
