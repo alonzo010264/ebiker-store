@@ -212,7 +212,7 @@ img {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    margin-right: 48px;
+    margin-right: 16px;
     text-decoration: none;
 }
 .nav-logo-img {
@@ -264,7 +264,7 @@ img {
     font-weight: 600;
     color: var(--text-secondary);
     letter-spacing: 1.2px;
-    padding: 8px 18px;
+    padding: 8px 10px;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition-smooth);
     white-space: nowrap;
@@ -309,14 +309,14 @@ img {
     border: 1px solid var(--accent-orange);
     border-radius: 24px;
     padding: 7px 16px;
-    width: 260px;
+    width: 180px;
     transition: var(--transition-smooth);
-    gap: 10px;
-    margin-right: 20px;
+    gap: 8px;
+    margin-right: 10px;
 }
 .search-box:focus-within {
     box-shadow: 0 0 8px rgba(255, 85, 0, 0.3);
-    width: 300px;
+    width: 220px;
 }
 .search-box input {
     width: 100%;
