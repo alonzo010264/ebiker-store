@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras | E-BIKER Performance</title>
+    <title>Shopping Cart | E-BIKER Performance</title>
     <!-- Google Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,15 @@
     <div class="top-bar">
         <div class="top-bar-item">
             <i class="fa-solid fa-truck-fast"></i>
-            <span>Envío gratis en pedidos superiores a $300</span>
+            <span>Free shipping on orders over $300</span>
         </div>
         <div class="top-bar-item">
             <i class="fa-solid fa-shield-halved"></i>
-            <span>Garantía de 2 años en todos los modelos</span>
+            <span>2-year warranty on all models</span>
         </div>
         <div class="top-bar-item">
             <i class="fa-solid fa-rotate-left"></i>
-            <span>Devoluciones fáciles en 30 días</span>
+            <span>Easy 30-day returns</span>
         </div>
     </div>
 
@@ -47,8 +47,8 @@
             <nav class="nav-menu" id="navMenu">
                 <!-- Mobile Search Box inside drawer -->
                 <div class="mobile-nav-search">
-                    <input type="text" id="mobileSearchInput" placeholder="Buscar motos, accesorios...">
-                    <button id="mobileSearchBtn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="mobileSearchInput" placeholder="Search motorcycles, accessories...">
+                    <button id="mobileSearchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
                 <!-- Nav Links Wrapper -->
@@ -61,70 +61,28 @@
                     <a href="#" class="nav-link" data-i18n="navSoporte">SUPPORT</a>
                 </div>
 
-                <!-- Mobile Language Selector inside drawer -->
-                <div class="mobile-lang-selector">
-                    <span class="mobile-lang-title">Idioma / Language</span>
-                    <div class="mobile-lang-grid">
-                        <button class="mobile-lang-btn active" data-lang="en">
-                            <span class="lang-flag-text">EN</span> English
-                        </button>
-                        <button class="mobile-lang-btn" data-lang="es">
-                            <span class="lang-flag-text">ES</span> Español
-                        </button>
-                        <button class="mobile-lang-btn" data-lang="fr">
-                            <span class="lang-flag-text">FR</span> Français
-                        </button>
-                        <button class="mobile-lang-btn" data-lang="de">
-                            <span class="lang-flag-text">DE</span> Deutsch
-                        </button>
-                    </div>
-                </div>
+
             </nav>
 
             <!-- Navigation Actions (Search, Account, Cart) -->
             <div class="header-actions">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Buscar motos, accesorios...">
-                    <button class="search-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="searchInput" placeholder="Search motorcycles, accessories...">
+                    <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <button class="action-btn account-btn" aria-label="Mi Cuenta">
+                <button class="action-btn account-btn" aria-label="My Account">
                      <i class="fa-regular fa-user"></i>
-                     <span data-i18n="accountText">Cuenta</span>
+                     <span data-i18n="accountText">Account</span>
                 </button>
-                <button class="action-btn cart-toggle-btn active" id="cartToggleBtn" aria-label="Ver Carrito">
+                <button class="action-btn cart-toggle-btn active" id="cartToggleBtn" aria-label="View Cart">
                     <div class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart-badge" id="cartBadge">0</span>
                     </div>
-                    <span data-i18n="cart">Carrito</span>
+                    <span data-i18n="cart">Cart</span>
                 </button>
-                
-                <!-- Language Selector Dropdown (Desktop) -->
-                <div class="lang-dropdown-container">
-                    <button class="lang-dropdown-trigger" id="langDropdownTrigger" aria-label="Select Language">
-                        <span class="lang-flag-text">EN</span>
-                        <span class="lang-name-text">English</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="lang-dropdown-menu">
-                        <button class="lang-dropdown-item active" data-lang="en">
-                            <span class="lang-flag-text">EN</span>
-                            <span>English</span>
-                        </button>
-                        <button class="lang-dropdown-item" data-lang="es">
-                            <span class="lang-flag-text">ES</span>
-                            <span>Español</span>
-                        </button>
-                        <button class="lang-dropdown-item" data-lang="fr">
-                            <span class="lang-flag-text">FR</span>
-                            <span>Français</span>
-                        </button>
-                        <button class="lang-dropdown-item" data-lang="de">
-                            <span class="lang-flag-text">DE</span>
-                            <span>Deutsch</span>
-                        </button>
-                    </div>
-                </div>
+
+
 
                 <!-- Hamburger menu for mobile -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
@@ -138,9 +96,9 @@
     <div class="breadcrumb-container">
         <div class="wrapper-wide">
             <nav class="breadcrumbs">
-                <a href="index.html" data-i18n="breadcrumbInicio">Inicio</a>
+                <a href="index.html" data-i18n="breadcrumbInicio">Home</a>
                 <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
-                <span class="current" data-i18n="breadcrumbCart">Carrito de compras</span>
+                <span class="current" data-i18n="breadcrumbCart">Shopping Cart</span>
             </nav>
         </div>
     </div>
@@ -148,8 +106,8 @@
     <!-- MAIN CART CONTENT -->
     <main class="cart-page-wrapper">
         <div class="wrapper-wide">
-            <h1 class="cart-page-title" data-i18n="cartPageTitle">Carrito de compras</h1>
-            <p class="cart-page-subtitle" data-i18n="cartPageSubtitle">Revisa tus productos antes de continuar con el pago.</p>
+            <h1 class="cart-page-title" data-i18n="cartPageTitle">Shopping Cart</h1>
+            <p class="cart-page-subtitle" data-i18n="cartPageSubtitle">Review your items before proceeding to checkout.</p>
 
             <div class="cart-grid">
                 <!-- Left column: Items List -->
@@ -157,9 +115,9 @@
                     
                     <!-- Table Header (Desktop only) -->
                     <div class="cart-table-header">
-                        <div class="col-product">PRODUCTO</div>
-                        <div class="col-price">PRECIO</div>
-                        <div class="col-qty">CANTIDAD</div>
+                        <div class="col-product">PRODUCT</div>
+                        <div class="col-price">PRICE</div>
+                        <div class="col-qty">QUANTITY</div>
                         <div class="col-total">TOTAL</div>
                         <div class="col-actions"></div>
                     </div>
@@ -172,18 +130,18 @@
                     <!-- Empty state -->
                     <div class="cart-page-empty-state" id="cartPageEmptyState" style="display: none;">
                         <i class="fa-solid fa-cart-flatbed-suitcase empty-icon"></i>
-                        <h2>Tu carrito está vacío</h2>
-                        <p>No tienes ningún producto en tu carrito de compras actualmente.</p>
-                        <a href="index.html#motos-section" class="btn btn-primary">Ver motocicletas</a>
+                        <h2>Your cart is empty</h2>
+                        <p>You don't have any products in your shopping cart at the moment.</p>
+                        <a href="index.html#motos-section" class="btn btn-primary">Browse Motorcycles</a>
                     </div>
 
                     <!-- Left Column Footer Buttons -->
                     <div class="cart-left-footer" id="cartLeftFooter">
                         <a href="index.html#motos-section" class="btn btn-outline btn-back">
-                            <i class="fa-solid fa-arrow-left"></i> Seguir comprando
+                            <i class="fa-solid fa-arrow-left"></i> Continue Shopping
                         </a>
                         <button class="btn btn-outline btn-clear" id="clearCartBtn">
-                            <i class="fa-solid fa-trash-can"></i> Vaciar carrito
+                            <i class="fa-solid fa-trash-can"></i> Clear Cart
                         </button>
                     </div>
 
@@ -194,35 +152,35 @@
                     
                     <!-- Summary Card -->
                     <div class="summary-card">
-                        <h3 class="summary-card-title">Resumen del pedido</h3>
+                        <h3 class="summary-card-title">Order Summary</h3>
                         
                         <div class="summary-row">
-                            <span id="subtotalLabel">Subtotal (0 artículos)</span>
+                            <span id="subtotalLabel">Subtotal (0 items)</span>
                             <span class="summary-val" id="pageSubtotal">$0.00</span>
                         </div>
                         
                         <div class="summary-row">
-                            <span>Envío</span>
-                            <span class="summary-val orange-text" id="pageShipping">Gratis</span>
+                            <span>Shipping</span>
+                            <span class="summary-val orange-text" id="pageShipping">Free</span>
                         </div>
 
                         <!-- Shipping Calculator Collapsible -->
                         <div class="shipping-calculator">
                             <button class="calc-toggle-btn" id="calcToggleBtn">
-                                <span>Calcula el envío</span>
+                                <span>Calculate Shipping</span>
                                 <i class="fa-solid fa-chevron-down toggle-arrow"></i>
                             </button>
                             <div class="calc-content" id="calcContent">
                                 <div class="calc-form-group">
-                                    <input type="text" placeholder="Ingresa tu código postal" class="calc-input" id="zipCodeInput">
-                                    <button class="btn btn-outline btn-calc" id="zipCalcBtn">Calcular</button>
+                                    <input type="text" placeholder="Enter your zip code" class="calc-input" id="zipCodeInput">
+                                    <button class="btn btn-outline btn-calc" id="zipCalcBtn">Calculate</button>
                                 </div>
                                 <div class="calc-result" id="calcResult"></div>
                             </div>
                         </div>
 
                         <div class="summary-row">
-                            <span>Impuestos</span>
+                            <span>Taxes</span>
                             <span class="summary-val">$0.00</span>
                         </div>
 
@@ -238,14 +196,14 @@
 
                         <!-- Proceed to Payment Button -->
                         <button class="btn btn-primary pay-btn" id="checkoutBtnPage">
-                            <i class="fa-solid fa-lock"></i> Proceder al pago
+                            <i class="fa-solid fa-lock"></i> Proceed to Checkout
                         </button>
 
                         <!-- Payments Secure Badges -->
                         <div class="secure-stripe-notice">
                             <div class="stripe-header">
                                 <i class="fa-solid fa-lock security-lock-icon"></i>
-                                <span>Pagos seguros con Stripe</span>
+                                <span>Secure payments with Stripe</span>
                             </div>
                             <div class="stripe-badge-grid">
                                 <div class="badge-item"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
@@ -262,8 +220,8 @@
                     <div class="promo-card">
                         <div class="promo-icon"><i class="fa-solid fa-tag"></i></div>
                         <div class="promo-text-box">
-                            <h4 class="promo-title">¿Tienes un código de descuento?</h4>
-                            <p class="promo-desc">Ingresa tu código al momento del pago.</p>
+                            <h4 class="promo-title">Have a discount code?</h4>
+                            <p class="promo-desc">Enter your code at checkout.</p>
                         </div>
                     </div>
 
@@ -272,7 +230,7 @@
 
             <!-- "También te puede interesar" Section -->
             <section class="suggestions-section">
-                <h2 class="suggestions-title">También te puede interesar</h2>
+                <h2 class="suggestions-title">You may also like</h2>
                 
                 <div class="suggestions-grid" id="suggestionsGrid">
                     <!-- Loaded dynamically via JS -->
@@ -288,29 +246,29 @@
             <div class="benefit-item">
                 <div class="icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
                 <div class="benefit-info">
-                    <h4>Tecnología de vanguardia</h4>
-                    <p>Innovación en cada detalle</p>
+                    <h4>Cutting-edge Technology</h4>
+                    <p>Innovation in every detail</p>
                 </div>
             </div>
             <div class="benefit-item">
                 <div class="icon-circle"><i class="fa-solid fa-feather-pointed"></i></div>
                 <div class="benefit-info">
-                    <h4>Diseño ligero y resistente</h4>
-                    <p>Máximo rendimiento</p>
+                    <h4>Lightweight & Durable Design</h4>
+                    <p>Maximum performance</p>
                 </div>
             </div>
             <div class="benefit-item">
                 <div class="icon-circle"><i class="fa-solid fa-battery-full"></i></div>
                 <div class="benefit-info">
-                    <h4>Baterías de última generación</h4>
-                    <p>Más autonomía y vida útil</p>
+                    <h4>Next-gen Batteries</h4>
+                    <p>More range and lifespan</p>
                 </div>
             </div>
             <div class="benefit-item">
                 <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
                 <div class="benefit-info">
-                    <h4>Soporte 24/7</h4>
-                    <p>Estamos para ayudarte</p>
+                    <h4>24/7 Support</h4>
+                    <p>We're here to help</p>
                 </div>
             </div>
         </div>
@@ -330,7 +288,7 @@
                     </div>
                 </a>
                 <p class="brand-desc">
-                    Motos eléctricas de alto rendimiento diseñadas para romper límites. Potencia. Libertad. Futuro.
+                    High-performance electric motorcycles designed to break limits. Power. Freedom. Future.
                 </p>
                 <div class="social-links">
                     <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -342,41 +300,41 @@
 
             <!-- Footer Menus -->
             <div class="footer-col">
-                <h4 class="footer-title">TIENDA</h4>
+                <h4 class="footer-title">SHOP</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html#motos-section">Todas las motos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Baterías</a></li>
-                    <li><a href="#">Repuestos</a></li>
+                    <li><a href="index.html#motos-section">All motorcycles</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Batteries</a></li>
+                    <li><a href="#">Spare parts</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
-                <h4 class="footer-title">SOPORTE</h4>
+                <h4 class="footer-title">SUPPORT</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Centro de ayuda</a></li>
-                    <li><a href="#">Envíos y entregas</a></li>
-                    <li><a href="#">Devoluciones</a></li>
-                    <li><a href="#">Garantía</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-title">EMPRESA</h4>
+                <h4 class="footer-title">COMPANY</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">About us</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Trabaja con nosotros</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
 
             <!-- Stripe Payment Methods -->
             <div class="footer-col payments-col">
-                <h4 class="footer-title">PAGOS SEGUROS CON STRIPE</h4>
+                <h4 class="footer-title">SECURE PAYMENTS WITH STRIPE</h4>
                 <div class="payment-cards-grid">
                     <div class="payment-card-badge visa-badge"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
                     <div class="payment-card-badge master-badge"><i class="fa-brands fa-cc-mastercard"></i><span>Mastercard</span></div>
@@ -385,12 +343,12 @@
                     <div class="payment-card-badge apple-pay-badge"><i class="fa-brands fa-apple-pay"></i></div>
                     <div class="payment-card-badge google-pay-badge"><i class="fa-brands fa-google-pay"></i></div>
                 </div>
-                <p class="payments-desc">Aceptamos todas las tarjetas de crédito y débito de forma segura.</p>
+                <p class="payments-desc">We accept all credit and debit cards securely.</p>
                 <div class="stripe-sec-logo">
                     <span class="stripe-word">stripe</span>
                     <div class="security-badge">
                         <i class="fa-solid fa-lock"></i>
-                        <span>Verificado Seguro</span>
+                        <span>Verified Secure</span>
                     </div>
                 </div>
             </div>
@@ -400,8 +358,48 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="footer-bottom-container">
-                <p class="copyright">&copy; 2026 E-BIKER Performance. Todos los derechos reservados.</p>
-                <p class="creator-credits">Hecho con <span class="heart">&hearts;</span> para los amantes de la aventura.</p>
+                <p class="copyright">&copy; 2026 E-BIKER Performance. All rights reserved.</p>
+
+                <!-- Footer Language Selector with Flags -->
+                <div class="footer-lang-selector">
+                    <span class="footer-lang-label"><i class="fa-solid fa-globe"></i> Language</span>
+                    <div class="footer-lang-options">
+                        <button class="footer-lang-btn active" data-lang="en" title="English">
+                            <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="es" title="Español">
+                            <img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-icon">
+                            <span>Español</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="fr" title="Français">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon">
+                            <span>Français</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="de" title="Deutsch">
+                            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon">
+                            <span>Deutsch</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="pt" title="Português">
+                            <img src="https://flagcdn.com/w40/br.png" alt="BR" class="flag-icon">
+                            <span>Português</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="it" title="Italiano">
+                            <img src="https://flagcdn.com/w40/it.png" alt="IT" class="flag-icon">
+                            <span>Italiano</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="ja" title="日本語">
+                            <img src="https://flagcdn.com/w40/jp.png" alt="JP" class="flag-icon">
+                            <span>日本語</span>
+                        </button>
+                        <button class="footer-lang-btn" data-lang="zh" title="中文">
+                            <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="flag-icon">
+                            <span>中文</span>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="creator-credits">Made with <span class="heart">&hearts;</span> for adventure lovers.</p>
             </div>
         </div>
     </footer>
@@ -409,7 +407,7 @@
     <!-- NOTIFICATION TOAST -->
     <div class="toast" id="toast">
         <i class="fa-solid fa-circle-check toast-icon"></i>
-        <span class="toast-message" id="toastMessage">¡Producto añadido al carrito!</span>
+        <span class="toast-message" id="toastMessage">Product added to cart!</span>
     </div>
 
     <!-- Page Logic -->

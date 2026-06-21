@@ -8,18 +8,18 @@ const PRODUCTS = [
     {
         id: 1,
         name: "EBP 805 PRO",
-        tag: "MÁS POPULAR",
+        tag: "MOST POPULAR",
         tagClass: "popular",
         price: 2899.00,
         originalPrice: null,
         autonomy: 120, // km (60-120 range)
         speed: 80, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.8,
         reviews: 124,
         image: "assets/ebp-805-pro.png",
         colorClass: "",
-        description: "Diseñada para dominar senderos difíciles con máxima maniobrabilidad. La EBP 805 Pro combina un motor de 6000W ultra silencioso con suspensión de alto recorrido ajustable para una experiencia enduro sin comparación."
+        description: "Designed to dominate difficult trails with maximum maneuverability. The EBP 805 Pro combines an ultra-silent 6000W motor with adjustable high-travel suspension for an unparalleled enduro experience."
     },
     {
         id: 2,
@@ -30,28 +30,28 @@ const PRODUCTS = [
         originalPrice: 1999.00,
         autonomy: 90, // km (60-120 range)
         speed: 70, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.5,
         reviews: 63,
         image: "assets/ebp-805-lite.png",
         colorClass: "",
-        description: "La entrada ideal al mundo de las motos eléctricas de alto rendimiento. Ligera, ágil y optimizada, es perfecta para trayectos rápidos y recreación off-road de fin de semana."
+        description: "The ideal entry to the world of high-performance electric motorcycles. Light, agile and optimized, it is perfect for quick trips and weekend off-road recreation."
     },
     {
         id: 3,
         name: "EBP HUNTER",
-        tag: "NUEVO",
+        tag: "NEW",
         tagClass: "new",
         price: 2099.00,
         originalPrice: null,
         autonomy: 110, // km (60-120 range)
         speed: 80, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.6,
         reviews: 31,
         image: "assets/ebp-trail-r.png",
         colorClass: "color-hunter",
-        description: "Diseño militar mate sigiloso y robusto. Concebida para incursiones forestales y caza fotográfica. Cuenta con neumáticos especiales para lodo extremo y chasis con sellado IP67 para cruzar arroyos."
+        description: "Stealthy and robust matte military design. Conceived for forest incursions and photographic hunting. Features special extreme mud tires and IP67 sealed chassis for crossing streams."
     },
     {
         id: 4,
@@ -62,12 +62,12 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 115, // km (60-120 range)
         speed: 78, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.7,
         reviews: 42,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-adventure",
-        description: "Una evolución natural del enduro clásico. Cuenta con amortiguadores de gas nitrógeno y frenos de disco hidráulicos regenerativos para mayor control."
+        description: "A natural evolution of the classic enduro. Features nitrogen gas shock absorbers and regenerative hydraulic disc brakes for greater control."
     },
     {
         id: 5,
@@ -78,12 +78,12 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 50, // km (0-60 range)
         speed: 40, // km/h (0-45 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.4,
         reviews: 29,
         image: "assets/ebp-805-lite.png",
         colorClass: "color-mini",
-        description: "Modelo compacto y silencioso para iniciarse en circuitos boscosos sin molestar a la fauna local. Muy fácil de manejar."
+        description: "Compact and silent model to start on wooded circuits without disturbing local wildlife. Very easy to handle."
     },
     {
         id: 6,
@@ -94,12 +94,12 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 55, // km (0-60 range)
         speed: 60, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.3,
         reviews: 18,
         image: "assets/ebp-805-lite.png",
         colorClass: "color-hunter",
-        description: "Compacta pero con el torque característico de la línea Enduro. Manillar ajustable y neumáticos mixtos."
+        description: "Compact but with the characteristic torque of the Enduro line. Adjustable handlebar and mixed tires."
     },
     {
         id: 7,
@@ -110,28 +110,28 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 95, // km (60-120 range)
         speed: 72, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.6,
         reviews: 50,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-mini",
-        description: "Conducción suave y amortiguada. La Glide 80 está pensada para trayectos mixtos de asfalto y tierra."
+        description: "Smooth and cushioned ride. The Glide 80 is designed for mixed asphalt and dirt routes."
     },
     {
         id: 8,
         name: "EBP VOLT S1",
-        tag: "OFERTA",
+        tag: "SALE",
         tagClass: "discount",
         price: 2399.00,
         originalPrice: 2699.00,
         autonomy: 105, // km (60-120 range)
         speed: 76, // km/h (45-80 range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.7,
         reviews: 35,
         image: "assets/ebp-storm-x.png",
         colorClass: "color-bronze",
-        description: "Modelo de alto torque y aceleración rápida. Excelente opción en oferta para pilotos que buscan sensaciones fuertes."
+        description: "High torque and fast acceleration model. Excellent option on sale for riders looking for strong sensations."
     },
     {
         id: 9,
@@ -142,12 +142,12 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 120, // km (60-120 range)
         speed: 82, // km/h (80+ range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.8,
         reviews: 21,
         image: "assets/ebp-trail-r.png",
         colorClass: "",
-        description: "Silenciosa y mortalmente rápida. Una e-bike construida con aleación de titanio y componentes premium."
+        description: "Silent and deadly fast. An e-bike built with titanium alloy and premium components."
     },
     {
         id: 10,
@@ -158,28 +158,28 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 100, // km (60-120 range)
         speed: 85, // km/h (80+ range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.5,
         reviews: 14,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-hunter",
-        description: "Perfecta combinación de peso ligero y motor de alta revolución para un control absoluto en curvas cerradas."
+        description: "Perfect combination of light weight and high-revolution motor for absolute control in tight corners."
     },
     {
         id: 11,
         name: "EBP APEX X",
-        tag: "NUEVO",
+        tag: "NEW",
         tagClass: "new",
         price: 4899.00,
         originalPrice: null,
         autonomy: 135, // km (120-200 range)
         speed: 92, // km/h (80+ range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.9,
         reviews: 27,
         image: "assets/ebp-trail-r.png",
         colorClass: "color-bronze",
-        description: "El tope de la línea Enduro. Potencia brutal de 10kW con batería modular de grafeno de alta eficiencia."
+        description: "The top of the Enduro line. Brutal 10kW power with high-efficiency modular graphene battery."
     },
     {
         id: 12,
@@ -190,19 +190,19 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 210, // km (200+ range)
         speed: 95, // km/h (80+ range)
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.9,
         reviews: 19,
         image: "assets/ebp-trail-r.png",
         colorClass: "color-adventure",
-        description: "La moto de enduro con mayor alcance en el mercado. Equipamiento completo de luces e instrumentación digital."
+        description: "The enduro motorcycle with the longest range on the market. Full equipment of lights and digital instrumentation."
     },
 
     // --- 8 Cross / Off Road ---
     {
         id: 13,
         name: "EBP STORM X",
-        tag: "NUEVO",
+        tag: "NEW",
         tagClass: "new",
         price: 2299.00,
         originalPrice: null,
@@ -213,12 +213,12 @@ const PRODUCTS = [
         reviews: 89,
         image: "assets/ebp-storm-x.png",
         colorClass: "",
-        description: "Rompe las reglas de la velocidad off-road. Con un chasis de aluminio aeroespacial ultraligero y torque instantáneo, la Storm X es perfecta para saltos exigentes y circuitos cerrados."
+        description: "Breaks the rules of off-road speed. With an ultralight aerospace aluminum chassis and instant torque, the Storm X is perfect for demanding jumps and closed circuits."
     },
     {
         id: 14,
         name: "EBP RACE X",
-        tag: "OFERTA",
+        tag: "SALE",
         tagClass: "discount",
         price: 4499.00,
         originalPrice: 4999.00,
@@ -229,7 +229,7 @@ const PRODUCTS = [
         reviews: 41,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-bronze",
-        description: "La bestia de competición definitiva. Equipada con un motor eléctrico de 12 kW de alta gama y componentes de carbono para pilotos profesionales que exigen la máxima aceleración y agarre."
+        description: "The ultimate racing beast. Equipped with a high-end 12 kW electric motor and carbon components for professional riders demanding maximum acceleration and grip."
     },
     {
         id: 15,
@@ -245,7 +245,7 @@ const PRODUCTS = [
         reviews: 17,
         image: "assets/ebp-805-lite.png",
         colorClass: "color-mini",
-        description: "Toda la diversión de E-BIKER en formato compacto. Perfecta para jóvenes y principiantes. Cuenta con llave de seguridad parental para limitar la velocidad a 25 km/h de forma física."
+        description: "All the fun of E-BIKER in a compact format. Perfect for youth and beginners. Features a parental safety key to physically limit speed to 25 km/h."
     },
     {
         id: 16,
@@ -261,7 +261,7 @@ const PRODUCTS = [
         reviews: 33,
         image: "assets/ebp-storm-x.png",
         colorClass: "color-adventure",
-        description: "Una motocicleta diseñada exclusivamente para pistas de tierra suelta y barro. Tracción total seleccionable."
+        description: "A motorcycle designed exclusively for loose dirt and mud tracks. Selectable all-wheel drive."
     },
     {
         id: 17,
@@ -277,7 +277,7 @@ const PRODUCTS = [
         reviews: 10,
         image: "assets/ebp-805-lite.png",
         colorClass: "",
-        description: "El modelo más pequeño de la familia, ideal para niños que incursionan en el deporte del motocross."
+        description: "The smallest model of the family, ideal for children entering the sport of motocross."
     },
     {
         id: 18,
@@ -293,7 +293,7 @@ const PRODUCTS = [
         reviews: 15,
         image: "assets/ebp-805-lite.png",
         colorClass: "color-adventure",
-        description: "Modelo juvenil intermedio. Conducción ágil y limitador de velocidad ajustable para mayor tranquilidad."
+        description: "Intermediate youth model. Agile handling and adjustable speed limiter for greater peace of mind."
     },
     {
         id: 19,
@@ -309,7 +309,7 @@ const PRODUCTS = [
         reviews: 22,
         image: "assets/ebp-805-lite.png",
         colorClass: "color-bronze",
-        description: "Versión más ligera y accesible de nuestra gama de motocross. Muy balanceada y divertida."
+        description: "Lighter and more accessible version of our motocross range. Very balanced and fun."
     },
     {
         id: 20,
@@ -325,7 +325,7 @@ const PRODUCTS = [
         reviews: 24,
         image: "assets/ebp-storm-x.png",
         colorClass: "color-hunter",
-        description: "Robusta, duradera y con suspensión delantera reforzada. Lista para el maltrato diario en circuitos off-road."
+        description: "Robust, durable and with reinforced front suspension. Ready for daily abuse on off-road circuits."
     },
 
     // --- 4 Trail / Aventura ---
@@ -338,12 +338,12 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 130, // km (120-200 range)
         speed: 85, // km/h (80+ range)
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.9,
         reviews: 76,
         image: "assets/ebp-trail-r.png",
         colorClass: "",
-        description: "Explora sin límites de batería. Diseñada para viajes de exploración y senderos mixtos de larga duración, cuenta con un asiento premium y sistema inteligente de regeneración de energía en descensos."
+        description: "Explore without battery limits. Designed for exploration trips and long-duration mixed trails, it features a premium seat and intelligent energy regeneration system on descents."
     },
     {
         id: 22,
@@ -354,113 +354,113 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 150, // km (120-200 range)
         speed: 85, // km/h (80+ range)
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.7,
         reviews: 28,
         image: "assets/ebp-storm-x.png",
         colorClass: "color-adventure",
-        description: "Preparada para cualquier expedición a lo desconocido. Cuenta con anclajes para alforjas integrados de fábrica, faro frontal LED de profundidad y modo de conducción 'Explorer' de alta autonomía."
+        description: "Prepared for any expedition into the unknown. Features factory-integrated saddlebag mounts, deep LED front headlight and high-autonomy 'Explorer' riding mode."
     },
     {
         id: 23,
         name: "EBP RANGER 200",
-        tag: "NUEVO",
+        tag: "NEW",
         tagClass: "new",
         price: 3999.00,
         originalPrice: null,
         autonomy: 220, // km (200+ range)
         speed: 90, // km/h (80+ range)
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.8,
         reviews: 19,
         image: "assets/ebp-trail-r.png",
         colorClass: "color-hunter",
-        description: "Diseño robusto para largas travesías. Incluye baúl trasero de almacenamiento, GPS integrado de fábrica y suspensión regulable neumática."
+        description: "Robust design for long journeys. Includes rear storage trunk, factory-integrated GPS and adjustable pneumatic suspension."
     },
     {
         id: 24,
         name: "EBP PATHFINDER X",
-        tag: "OFERTA",
+        tag: "SALE",
         tagClass: "discount",
         price: 4299.00,
         originalPrice: 4799.00,
         autonomy: 240, // km (200+ range)
         speed: 75, // km/h (45-80 range)
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.9,
         reviews: 37,
         image: "assets/ebp-trail-r.png",
         colorClass: "color-bronze",
-        description: "La reina de la carretera y el sendero. Sistema de navegación, doble batería de alta densidad e iluminación completa de 360 grados."
+        description: "The queen of the road and trail. Navigation system, dual high-density battery and full 360-degree lighting."
     },
     // --- ACCESORIOS (Para "También te puede interesar") ---
     {
         id: 101,
         name: "Casco Off Road E-Biker",
         price: 199.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.8,
         reviews: 56,
         image: "assets/ebp-helmet.png",
         colorClass: "",
-        description: "Casco protector de alta resistencia homologado para motocross y off-road."
+        description: "High-resistance protective helmet approved for motocross and off-road."
     },
     {
         id: 102,
         name: "Guantes de Protección",
         price: 49.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.7,
         reviews: 32,
         image: "assets/ebp-gloves.png",
         colorClass: "",
-        description: "Guantes reforzados con protección de nudillos y palma antideslizante."
+        description: "Reinforced gloves with knuckle protection and anti-slip palm."
     },
     {
         id: 103,
         name: "Cargador Rápido 72V",
         price: 199.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.9,
         reviews: 18,
         image: "assets/ebp-charger.png",
         colorClass: "",
-        description: "Carga rápida inteligente para baterías de litio de alto rendimiento."
+        description: "Intelligent fast charge for high-performance lithium batteries."
     },
     {
         id: 104,
         name: "Kit de Llantas Off Road",
         price: 299.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.8,
         reviews: 24,
         image: "assets/ebp-tires.png",
         colorClass: "",
-        description: "Par de llantas de alta tracción con tacos profundos para terrenos difíciles."
+        description: "High-traction pair of tires with deep knobs for difficult terrains."
     },
     {
         id: 105,
         name: "Protector de Manos",
         price: 59.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.6,
         reviews: 15,
         image: "assets/ebp-guards.png",
         colorClass: "",
-        description: "Protectores acrílicos contra viento, ramas y caídas en el manillar."
+        description: "Acrylic guards against wind, branches and falls on the handlebar."
     },
     // --- BATERÍAS ---
     {
         id: 201,
         name: "Batería de Litio 72V 40Ah",
         price: 899.00,
-        type: "Batería",
+        type: "Battery",
         rating: 4.9,
         reviews: 42,
         image: "fa-battery-full",
         isIcon: true,
         colorClass: "",
-        description: "Batería de celdas de litio de alta densidad para máxima autonomía. Compatible con modelos EBP 805 PRO, STORM X y TRAIL R."
+        description: "High-density lithium cell battery for maximum autonomy. Compatible with EBP 805 PRO, STORM X and TRAIL R models."
     }
 ];
 
@@ -603,8 +603,8 @@ function renderAll() {
         productGrid.innerHTML = `
             <div class="no-products-message" style="grid-column: span 3; text-align: center; padding: 50px 20px; color: var(--text-secondary);">
                 <i class="fa-solid fa-bicycle" style="font-size: 2.5rem; color: var(--text-muted); margin-bottom: 15px;"></i>
-                <p>No se encontraron motocicletas con los filtros seleccionados.</p>
-                <button class="btn btn-secondary" id="resetFiltersLink" style="margin-top: 15px;">Limpiar Filtros</button>
+                <p>No motorcycles found with the selected filters.</p>
+                <button class="btn btn-secondary" id="resetFiltersLink" style="margin-top: 15px;">Clear Filters</button>
             </div>
         `;
         document.getElementById('resetFiltersLink')?.addEventListener('click', resetAllFilters);
@@ -635,11 +635,11 @@ function renderAll() {
                         <div class="product-specs">
                             <div class="spec-line">
                                 <i class="fa-solid fa-gauge-high"></i>
-                                <span>${p.autonomy} km autonomía</span>
+                                <span>${p.autonomy} km autonomy</span>
                             </div>
                             <div class="spec-line">
                                 <i class="fa-solid fa-bolt"></i>
-                                <span>${p.speed} km/h velocidad máx.</span>
+                                <span>${p.speed} km/h max speed</span>
                             </div>
                             <div class="spec-line">
                                 <i class="fa-solid fa-circle-info"></i>
@@ -658,7 +658,7 @@ function renderAll() {
                                 <span><strong>${p.rating}</strong> (${p.reviews})</span>
                             </div>
                         </div>
-                        <button class="add-to-cart-btn" onclick="addToCart(${p.id})" aria-label="Añadir al carrito">
+                        <button class="add-to-cart-btn" onclick="addToCart(${p.id})" aria-label="Add to cart">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -691,9 +691,9 @@ function updateFilterCounts() {
     document.getElementById('count-speed-3').textContent = countSpeed3;
 
     // Counts for Type
-    const countType1 = PRODUCTS.filter(p => p.type === "Enduro Eléctrica").length;
+    const countType1 = PRODUCTS.filter(p => p.type === "Electric Enduro").length;
     const countType2 = PRODUCTS.filter(p => p.type === "Cross / Off Road").length;
-    const countType3 = PRODUCTS.filter(p => p.type === "Trail / Aventura").length;
+    const countType3 = PRODUCTS.filter(p => p.type === "Trail / Adventure").length;
 
     document.getElementById('count-type-1').textContent = countType1;
     document.getElementById('count-type-2').textContent = countType2;
@@ -797,7 +797,7 @@ function setupEventListeners() {
     document.getElementById('newsletterForm').addEventListener('submit', (e) => {
         e.preventDefault();
         const email = document.getElementById('newsletterEmail').value;
-        showToast(`¡Suscrito con éxito! Enviado a: ${email}`);
+        showToast(`Successfully subscribed! Sent to: ${email}`);
         document.getElementById('newsletterEmail').value = '';
     });
 
@@ -870,7 +870,7 @@ function addToCart(productId) {
 
     saveCartToStorage();
     updateCartUI();
-    showToast(`¡${product.name} añadida al carrito!`);
+    showToast(`${product.name} Added to cart!`);
     
     // Animate cart badge
     cartBadge.style.transform = 'scale(1.3)';
@@ -897,7 +897,7 @@ function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
     saveCartToStorage();
     updateCartUI();
-    showToast("Producto eliminado del carrito.");
+    showToast("Product removed from cart.");
 }
 
 function updateCartUI() {
@@ -948,7 +948,7 @@ function updateCartUI() {
                         <button class="qty-btn" onclick="updateCartQuantity(${item.id}, 1)">+</button>
                     </div>
                 </div>
-                <button class="remove-item-btn" onclick="removeFromCart(${item.id})" aria-label="Eliminar item">
+                <button class="remove-item-btn" onclick="removeFromCart(${item.id})" aria-label="Remove item">
                     <i class="fa-solid fa-trash-can"></i>
                 </button>
             </div>
@@ -961,11 +961,11 @@ function simulateCheckout() {
     if (cart.length === 0) return;
 
     checkoutBtn.disabled = true;
-    checkoutBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> PROCESANDO CON STRIPE...`;
+    checkoutBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> PROCESSING WITH STRIPE...`;
 
     // Simulate Stripe payment processing window
     setTimeout(() => {
-        showToast("¡Pago procesado con Stripe correctamente! Redirigiendo...");
+        showToast("Payment processed with Stripe successfully! Redirecting...");
         
         setTimeout(() => {
             cart = [];
@@ -974,9 +974,9 @@ function simulateCheckout() {
             toggleCartDrawer(false);
             
             checkoutBtn.disabled = false;
-            checkoutBtn.innerHTML = `PROCEDER AL PAGO CON STRIPE`;
+            checkoutBtn.innerHTML = `PROCEED TO STRIPE CHECKOUT`;
 
-            alert("🎉 ¡Simulación de pago exitosa!\n\nGracias por su compra en E-BIKER Performance. Su pedido ha sido registrado a través del sandbox seguro de Stripe.");
+            alert("🎉 Payment simulation successful!\n\nThank you for your purchase at E-BIKER Performance. Your order has been registered through Stripe's secure sandbox.");
         }, 1500);
 
     }, 2000);
@@ -1012,20 +1012,20 @@ function openProductModal(productId) {
             
             <div class="modal-specs-grid">
                 <div class="modal-spec-item">
-                    <span class="modal-spec-label">Autonomía</span>
+                    <span class="modal-spec-label">Autonomy</span>
                     <span class="modal-spec-val">${product.autonomy} km</span>
                 </div>
                 <div class="modal-spec-item">
-                    <span class="modal-spec-label">Velocidad Máxima</span>
+                    <span class="modal-spec-label">Maximum Speed</span>
                     <span class="modal-spec-val">${product.speed} km/h</span>
                 </div>
                 <div class="modal-spec-item">
-                    <span class="modal-spec-label">Valoración</span>
+                    <span class="modal-spec-label">Rating</span>
                     <span class="modal-spec-val"><i class="fa-solid fa-star" style="color: #ffaa00;"></i> ${product.rating} / 5.0</span>
                 </div>
                 <div class="modal-spec-item">
-                    <span class="modal-spec-label">Garantía oficial</span>
-                    <span class="modal-spec-val">2 años</span>
+                    <span class="modal-spec-label">Official warranty</span>
+                    <span class="modal-spec-val">2 years</span>
                 </div>
             </div>
 
@@ -1035,7 +1035,7 @@ function openProductModal(productId) {
                     <span class="price orange-text">$${formatNumber(product.price)}</span>
                 </div>
                 <button class="btn btn-primary modal-add-btn" onclick="addToCart(${product.id}); toggleModal(false);">
-                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                 </button>
             </div>
         </div>

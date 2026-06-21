@@ -8,18 +8,18 @@ const PRODUCTS = [
     {
         id: 1,
         name: "EBP 805 PRO",
-        tag: "MÁS POPULAR",
+        tag: "MOST POPULAR",
         tagClass: "popular",
         price: 2899.00,
         originalPrice: null,
         autonomy: 120,
         speed: 80,
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.8,
         reviews: 124,
         image: "assets/ebp-805-pro.png",
         colorClass: "",
-        description: "Diseñada para dominar senderos difíciles con máxima maniobrabilidad. La EBP 805 Pro combina un motor de 6000W ultra silencioso con suspensión de alto recorrido ajustable para una experiencia enduro sin comparación."
+        description: "Designed to dominate difficult trails with maximum maneuverability. The EBP 805 Pro combines an ultra-silent 6000W motor with adjustable high-travel suspension for an unparalleled enduro experience."
     },
     {
         id: 2,
@@ -30,28 +30,28 @@ const PRODUCTS = [
         originalPrice: 1999.00,
         autonomy: 90,
         speed: 70,
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.5,
         reviews: 63,
         image: "assets/ebp-805-lite.png",
         colorClass: "",
-        description: "La entrada ideal al mundo de las motos eléctricas de alto rendimiento. Ligera, ágil y optimizada, es perfecta para trayectos rápidos y recreación off-road de fin de semana."
+        description: "The ideal entry to the world of high-performance electric motorcycles. Light, agile and optimized, it is perfect for quick trips and weekend off-road recreation."
     },
     {
         id: 3,
         name: "EBP HUNTER",
-        tag: "NUEVO",
+        tag: "NEW",
         tagClass: "new",
         price: 2099.00,
         originalPrice: null,
         autonomy: 110,
         speed: 80,
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.6,
         reviews: 44,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-hunter",
-        description: "Equipada con neumáticos de taco agresivo y batería reforzada para expediciones largas de caza u observación de campo en silencio total."
+        description: "Equipped with aggressive knobby tires and reinforced battery for long hunting expeditions or field observation in total silence."
     },
     {
         id: 4,
@@ -62,17 +62,17 @@ const PRODUCTS = [
         originalPrice: null,
         autonomy: 130,
         speed: 85,
-        type: "Enduro Eléctrica",
+        type: "Electric Enduro",
         rating: 4.7,
         reviews: 31,
         image: "assets/ebp-805-pro.png",
         colorClass: "color-bronze",
-        description: "La compañera ideal para guardabosques y patrullaje rural. Resistente al agua, al barro y equipada con parrilla de carga trasera de serie."
+        description: "The ideal companion for park rangers and rural patrolling. Water-resistant, mud-resistant, and equipped with a rear cargo rack as standard."
     },
     {
         id: 10,
         name: "EBP STORM X",
-        tag: "MÁS VENDIDO",
+        tag: "BEST SELLER",
         tagClass: "popular",
         price: 2299.00,
         originalPrice: null,
@@ -83,7 +83,7 @@ const PRODUCTS = [
         reviews: 142,
         image: "assets/ebp-storm-x.png",
         colorClass: "",
-        description: "Pura potencia instantánea para circuitos de motocross. Con una aceleración explosiva de 0 a 50 km/h en 2.1 segundos y chasis de aleación ultraligero."
+        description: "Pure instant power for motocross circuits. With an explosive acceleration from 0 to 50 km/h in 2.1 seconds and an ultralight alloy chassis."
     },
     {
         id: 20,
@@ -99,7 +99,7 @@ const PRODUCTS = [
         id: 21,
         name: "EBP TRAIL R",
         price: 3199.00,
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.9,
         reviews: 76,
         image: "assets/ebp-trail-r.png",
@@ -109,7 +109,7 @@ const PRODUCTS = [
         id: 22,
         name: "EBP ADVENTURE",
         price: 2699.00,
-        type: "Trail / Aventura",
+        type: "Trail / Adventure",
         rating: 4.7,
         reviews: 28,
         image: "assets/ebp-storm-x.png",
@@ -118,71 +118,71 @@ const PRODUCTS = [
     // --- ACCESORIOS (Para "También te puede interesar") ---
     {
         id: 101,
-        name: "Casco Off Road E-Biker",
+        name: "Off Road E-Biker Helmet",
         price: 199.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.8,
         reviews: 56,
         image: "assets/ebp-helmet.png",
         colorClass: "",
-        description: "Casco protector de alta resistencia homologado para motocross y off-road."
+        description: "High-resistance protective helmet approved for motocross and off-road."
     },
     {
         id: 102,
-        name: "Guantes de Protección",
+        name: "Protective Gloves",
         price: 49.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.7,
         reviews: 32,
         image: "assets/ebp-gloves.png",
         colorClass: "",
-        description: "Guantes de cuero sintético y protecciones de fibra de carbono en nudillos."
+        description: "Synthetic leather gloves with carbon fiber protectors on knuckles."
     },
     {
         id: 103,
-        name: "Cargador Rápido 72V",
+        name: "72V Fast Charger",
         price: 199.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.9,
         reviews: 18,
         image: "assets/ebp-charger.png",
         colorClass: "",
-        description: "Carga rápida inteligente para reducir a la mitad el tiempo de carga oficial."
+        description: "Intelligent fast charge to cut official charging time in half."
     },
     {
         id: 104,
-        name: "Kit de Llantas Off Road",
+        name: "Off Road Tire Kit",
         price: 299.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.8,
         reviews: 24,
         image: "assets/ebp-tires.png",
         colorClass: "",
-        description: "Par de llantas de alta tracción y compuesto blando para terrenos rocosos."
+        description: "High-traction, soft compound pair of tires for rocky terrains."
     },
     {
         id: 105,
-        name: "Protector de Manos",
+        name: "Hand Guards",
         price: 59.00,
-        type: "Accesorio",
+        type: "Accessory",
         rating: 4.6,
         reviews: 15,
         image: "assets/ebp-guards.png",
         colorClass: "",
-        description: "Defensas aerodinámicas para proteger las manetas e impedir impactos en las manos."
+        description: "Aerodynamic guards to protect levers and prevent hand impacts."
     },
     // --- BATERÍAS ---
     {
         id: 201,
-        name: "Batería de Litio 72V 40Ah",
+        name: "72V 40Ah Lithium Battery",
         price: 899.00,
-        type: "Batería",
+        type: "Battery",
         rating: 4.9,
         reviews: 42,
         image: "fa-battery-full",
         isIcon: true,
         colorClass: "",
-        description: "Batería de celdas de litio de alta densidad para máxima autonomía. Compatible con modelos EBP 805 PRO, STORM X y TRAIL R."
+        description: "High-density lithium cell battery for maximum autonomy. Compatible with EBP 805 PRO, STORM X, and TRAIL R models."
     }
 ];
 
@@ -274,39 +274,39 @@ function renderCartPage() {
         if (item.id === 1) {
             detailsHTML = `
                 <div class="item-meta-row">
-                    <span>Color: Blanco Naranja</span>
+                    <span>Color: White Orange</span>
                     <span class="color-indicator-dot white-orange"></span>
                 </div>
                 <div class="item-meta-row">
-                    <span>Autonomía: 120 km</span>
+                    <span>Autonomy: 120 km</span>
                 </div>
             `;
         } else if (item.id === 10) {
             detailsHTML = `
                 <div class="item-meta-row">
-                    <span>Color: Negro Naranja</span>
+                    <span>Color: Black Orange</span>
                     <span class="color-indicator-dot black-orange"></span>
                 </div>
                 <div class="item-meta-row">
-                    <span>Autonomía: 100 km</span>
+                    <span>Autonomy: 100 km</span>
                 </div>
             `;
         } else if (item.id === 201) {
             detailsHTML = `
                 <div class="item-meta-row">
-                    <span>Compatibilidad: EBP 805 PRO / STORM X / TRAIL R</span>
+                    <span>Compatibility: EBP 805 PRO / STORM X / TRAIL R</span>
                 </div>
             `;
-        } else if (item.type === 'Accesorio' || item.isIcon) {
+        } else if (item.type === 'Accessory' || item.isIcon) {
             detailsHTML = `
                 <div class="item-meta-row">
-                    <span>Garantía oficial: 2 años</span>
+                    <span>Official warranty: 2 years</span>
                 </div>
             `;
         } else {
             detailsHTML = `
                 <div class="item-meta-row">
-                    <span>Autonomía: ${item.autonomy || 'N/A'} km</span>
+                    <span>Autonomy: ${item.autonomy || 'N/A'} km</span>
                 </div>
             `;
         }
@@ -334,13 +334,13 @@ function renderCartPage() {
 
                 <!-- Price -->
                 <div class="cart-price-block">
-                    <span class="label-mobile">Precio: </span>
+                    <span class="label-mobile">Price: </span>
                     <span class="price-val">$${formatNumber(item.price)}</span>
                 </div>
 
                 <!-- Qty selector -->
                 <div class="cart-qty-block">
-                    <span class="label-mobile">Cantidad: </span>
+                    <span class="label-mobile">Quantity: </span>
                     <div class="qty-selector-group">
                         <button class="qty-btn-minus" onclick="changeQuantity(${item.id}, -1)">-</button>
                         <span class="qty-display-val">${item.quantity}</span>
@@ -356,7 +356,7 @@ function renderCartPage() {
 
                 <!-- Remove button -->
                 <div class="cart-remove-block">
-                    <button class="btn-remove-item" onclick="removePageItem(${item.id})" aria-label="Eliminar artículo">
+                    <button class="btn-remove-item" onclick="removePageItem(${item.id})" aria-label="Remove item">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
@@ -377,11 +377,11 @@ function updateSummary() {
     const shippingCost = subtotal > 300 || subtotal === 0 ? 0 : 25;
     const total = subtotal + shippingCost;
 
-    subtotalLabel.textContent = `Subtotal (${totalItems} artículo${totalItems !== 1 ? 's' : ''})`;
+    subtotalLabel.textContent = `Subtotal (${totalItems} item${totalItems !== 1 ? 's' : ''})`;
     pageSubtotal.textContent = `$${formatNumber(subtotal)}`;
     
     if (shippingCost === 0) {
-        pageShipping.textContent = "Gratis";
+        pageShipping.textContent = "Free";
         pageShipping.classList.add('green-text');
     } else {
         pageShipping.textContent = `$${formatNumber(shippingCost)}`;
@@ -420,7 +420,7 @@ function renderSuggestions() {
                         <span>${item.rating} (${item.reviews})</span>
                     </div>
                     <button class="btn btn-outline btn-add-sugg" onclick="addSuggestedToCart(${item.id})">
-                        Agregar al carrito <i class="fa-solid fa-cart-plus"></i>
+                        Add to cart <i class="fa-solid fa-cart-plus"></i>
                     </button>
                 </div>
             </div>
@@ -446,7 +446,7 @@ window.removePageItem = function(productId) {
     cart = cart.filter(item => item.id !== productId);
     saveCartToStorage();
     renderCartPage();
-    showToast("Producto eliminado del carrito.");
+    showToast("Product removed from cart.");
 };
 
 window.addSuggestedToCart = function(productId) {
@@ -465,18 +465,18 @@ window.addSuggestedToCart = function(productId) {
 
     saveCartToStorage();
     renderCartPage();
-    showToast(`¡${product.name} añadido al carrito!`);
+    showToast(`${product.name} added to cart!`);
 };
 
 // --- EVENT LISTENERS ---
 function setupEventListeners() {
     // Clear cart button
     clearCartBtn.addEventListener('click', () => {
-        if (confirm("¿Estás seguro de que deseas vaciar tu carrito de compras?")) {
+        if (confirm("Are you sure you want to empty your shopping cart?")) {
             cart = [];
             saveCartToStorage();
             renderCartPage();
-            showToast("Tu carrito ha sido vaciado.");
+            showToast("Your cart has been emptied.");
         }
     });
 
@@ -490,21 +490,21 @@ function setupEventListeners() {
     zipCalcBtn.addEventListener('click', () => {
         const zip = zipCodeInput.value.trim();
         if (!zip) {
-            calcResult.innerHTML = `<span style="color: var(--tag-discount)">Por favor, ingresa un código postal válido.</span>`;
+            calcResult.innerHTML = `<span style="color: var(--tag-discount)">Please enter a valid zip code.</span>`;
             return;
         }
 
         zipCalcBtn.disabled = true;
-        calcResult.innerHTML = `<i class="fa-solid fa-spinner fa-spin orange-text"></i> Calculando costo de envío...`;
+        calcResult.innerHTML = `<i class="fa-solid fa-spinner fa-spin orange-text"></i> Calculating shipping cost...`;
 
         setTimeout(() => {
             zipCalcBtn.disabled = false;
             // 70% chance of free shipping, 30% chance of standard flat rate
             const isFree = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0) > 300;
             if (isFree) {
-                calcResult.innerHTML = `<span class="green-text"><i class="fa-solid fa-circle-check"></i> ¡Envío Gratis para tu zona con este pedido!</span>`;
+                calcResult.innerHTML = `<span class="green-text"><i class="fa-solid fa-circle-check"></i> Free Shipping to your area with this order!</span>`;
             } else {
-                calcResult.innerHTML = `<span style="color: var(--text-secondary)"><i class="fa-solid fa-truck-fast"></i> Costo estimado para CP ${zip}: $25.00 USD</span>`;
+                calcResult.innerHTML = `<span style="color: var(--text-secondary)"><i class="fa-solid fa-truck-fast"></i> Estimated cost for Zip ${zip}: $25.00 USD</span>`;
             }
         }, 1200);
     });
@@ -514,10 +514,10 @@ function setupEventListeners() {
         if (cart.length === 0) return;
 
         checkoutBtnPage.disabled = true;
-        checkoutBtnPage.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> PROCESANDO PAGO CON STRIPE...`;
+        checkoutBtnPage.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> PROCESSING STRIPE PAYMENT...`;
 
         setTimeout(() => {
-            showToast("¡Pago procesado con Stripe correctamente!");
+            showToast("Payment processed with Stripe successfully!");
             
             setTimeout(() => {
                 cart = [];
@@ -525,9 +525,9 @@ function setupEventListeners() {
                 renderCartPage();
                 
                 checkoutBtnPage.disabled = false;
-                checkoutBtnPage.innerHTML = `<i class="fa-solid fa-lock"></i> Proceder al pago`;
+                checkoutBtnPage.innerHTML = `<i class="fa-solid fa-lock"></i> Proceed to checkout`;
 
-                alert("🎉 ¡Simulación de pago exitosa!\n\nGracias por su compra en E-BIKER Performance. Su pedido ha sido registrado a través del sandbox seguro de Stripe.");
+                alert("🎉 Payment simulation successful!\n\nThank you for your purchase at E-BIKER Performance. Your order has been registered through Stripe's secure sandbox.");
             }, 1200);
         }, 2000);
     });
